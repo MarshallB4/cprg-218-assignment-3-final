@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shangri-La Beach Resort</title>
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="assets/mainlogo.png" alt="Shangri-La Logo" width="150" height="auto" />
+      <button class="hamburger" id="hamburger-toggle" aria-label="Toggle navigation">☰</button>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="activities.html">Activities & Recreation</a></li>
+          <li><a href="dining.html">Dining</a></li>
+          <li><a href="guest_rooms.html">Guest Rooms</a></li>
+          <li><a href="spa.html">Spa</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+        </ul>
+      </nav>
+      <div id="weather">Loading weather...</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="assets/images/hero.jpg" alt="Resort overview" width="2048" height="1365" style="display:none;" />
+      <h1>Shangri La Beach Resort - Your Dream Getaway</h1>
+      <p>Escape to Paradise</p>
+      <p>Indulge in luxury and breathtaking views at Shangri La Beach Resort.</p>
+    </section>
+
+    <section class="features">
+      <h2>Experience Unforgettable Moments</h2>
+      <div class="feature-list">
+        <article>
+          <i class="fa-solid fa-water"></i>
+          <h3>Private Beach Access</h3>
+          <p>Step onto our pristine, white-sand beach.</p>
+        </article>
+        <article>
+          <i class="fa-solid fa-person-swimming"></i>
+          <h3>Infinity Pool</h3>
+          <p>Relax by our stunning oceanfront infinity pool.</p>
+        </article>
+        <article>
+          <i class="fa-solid fa-leaf"></i>
+          <h3>World-Class Spa</h3>
+          <p>Rejuvenate your mind and body at our spa.</p>
+        </article>
+        <article>
+          <i class="fa-solid fa-spoon"></i>
+          <h3>Exquisite Dining</h3>
+          <p>Savor culinary delights at our restaurants.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="accommodations-preview">
+      <h2>Our Luxurious Accommodations</h2>
+      <div class="room-list">
+        <article class="room">
+          <img src="assets/images/oceanview_optimized.jpg" alt="Ocean View Deluxe Room" width="400" height="250" />
+          <h3>Ocean View Deluxe Room</h3>
+          <p>Enjoy stunning ocean views from your private balcony.</p>
+          <a href="guest_rooms.html">View Details</a>
+        </article>
+
+        <article class="room">
+          <img src="assets/images/beachfront_optimized.jpg" alt="Beachfront Suite" width="400" height="250" />
+          <h3>Beachfront Suite</h3>
+          <p>Step directly onto the sand from your spacious suite.</p>
+          <a href="guest_rooms.html">View Details</a>
+        </article>
+
+        <article class="room">
+          <img src="assets/images/gardenview_optimized.jpg" alt="Garden View Family Room" width="400" height="250" />
+          <h3>Garden View Family Room</h3>
+          <p>Perfect for families, with ample space and garden views.</p>
+          <a href="guest_rooms.html">View Details</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>What Our Guests Are Saying</h2>
+
+      <article>
+        <blockquote>
+          "Our stay at Shangri La was absolutely perfect! The service was impeccable, and
+          the views were breathtaking."
+          <br><cite>- Sarah M.</cite>
+        </blockquote>
+      </article>
+
+      <article>
+        <blockquote>
+          "The beachfront suite was amazing! Waking up to the sound of the waves and
+          stepping right onto the sand was incredible."
+          <br><cite>- John B.</cite>
+        </blockquote>
+      </article>
+
+      <a href="testimonials.html" class="read-more">Read More Testimonials</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <img src="assets/favi.png" alt="Favicon" class="footer-icon" width="40" height="40" />
+      <div class="footer-text">
+        <p>&copy; 2025 Shangri‑La Beach Resort. All rights reserved.</p>
+        <p class="attribution">
+          Icons provided by <a href="https://fontawesome.com/" target="_blank" rel="noopener">Font Awesome</a>
+          under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0 license</a>.
+          Icons' color has been modified.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/weather.js"></script>
+  <script>
+    const hamburgerToggle = document.getElementById('hamburger-toggle');
+    const nav = document.querySelector('nav');
+    hamburgerToggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

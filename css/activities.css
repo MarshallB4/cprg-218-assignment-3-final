@@ -1,0 +1,155 @@
+.hero-activities {
+    width: 100vw;
+    height: 400px;
+    margin-left: calc(-50vw + 50%);
+    background: linear-gradient(to right, rgba(0,125,138,0.8), rgba(0,125,138,0.3)),
+                url('../assets/images/optimized_beach-swing.webp') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 6rem 1rem;
+    position: relative;
+}
+
+.hero-activities h1,
+.hero-activities p {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1.5s ease-out forwards;
+}
+
+.hero-activities h1 {
+    font-size: 2.8rem;
+    font-family: var(--heading-font);
+    margin-bottom: 2rem;
+}
+
+.hero-activities p {
+    font-size: 1.2rem;
+    font-family: var(--body-font);
+}
+
+.activities-page {
+    font-family: var(--body-font);
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 0rem;
+}
+
+.activity-section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 8rem;
+    margin-top: 4rem;
+}
+
+.activity-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.activity-section img {
+    width: 50%;
+    height: 350px;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.text-content {
+    width: 50%;
+}
+
+.text-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+}
+
+.text-content ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    color: var(--text-color);
+    font-family: var(--body-font);
+}
+
+.text-content li {
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+}
+
+/* Full‑width stripe */
+.booking-info {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    background-color: #f1f8f5;
+    padding: 3rem 0;          
+    position: relative;
+}
+
+/* Constrain the inner text */
+.booking-info h2,
+.booking-info ul {
+    max-width: 800px;
+    margin: 0 auto;          
+    text-align: center;
+}
+
+/* Booking Info heading */
+.booking-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+}
+
+/* Booking Info list */
+.booking-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 0;
+    color: var(--text-color);
+}
+
+.booking-info li {
+    margin-bottom: 0.6rem;
+}
+
+
+.booking-info p {
+    max-width: 800px;
+    margin: 1rem auto;
+    text-align: center;
+  }
+
+  @media (max-width: 800px) {
+    .activity-section {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+  
+    .activity-section.reverse {
+      flex-direction: column;
+    }
+  
+    .activity-section img {
+      width: 100%;
+      height: auto;
+      max-width: 500px;
+    }
+  
+    .text-content {
+      width: 100%;
+      margin-top: 1.5rem;
+    }
+  
+    .text-content ul {
+      text-align: left;
+      padding-left: 1.5rem;
+    }
+  }
+  

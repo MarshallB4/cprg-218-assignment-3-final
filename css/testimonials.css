@@ -1,0 +1,84 @@
+.hero-testimonials {
+    width: 100vw;
+    height: 400px;
+    margin-left: calc(-50vw + 50%);
+    background:
+      linear-gradient(to right, rgba(0,125,138,0.8), rgba(0,125,138,0.3)),
+      url('../assets/images/optimized_huts.webp') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 6rem 1rem;
+    position: relative;
+}
+.hero-testimonials h1,
+.hero-testimonials p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1.5s ease-out forwards;
+}
+.hero-testimonials h1 {
+    font-size: 2.8rem;
+    font-family: var(--heading-font);
+    margin-bottom: 0.5rem;
+}
+.hero-testimonials p {
+    font-size: 1.2rem;
+    font-family: var(--body-font);
+}
+
+
+/* Centered page wrapper */
+.testimonials-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    font-family: var(--body-font);
+}
+
+.testimonials-list {
+    margin-top: 5rem;
+  }  
+
+/* Testimonials List */
+.testimonials-list blockquote {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    padding: 2rem;
+    background: #fff;
+    border-left: 5px solid var(--accent-color);
+    font-style: italic;
+    color: #444;
+    line-height: 1.6;
+    border-radius: 8px;
+}
+.testimonials-list blockquote cite {
+    display: block;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 1rem;
+    text-align: right;
+    color: var(--text-color);
+}
+
+.conclusion-text {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    background-color: #f1f8f5;
+    padding: 3rem 0;
+    margin-bottom: 1rem;       
+    position: relative;
+  }
+  
+
+  .conclusion-text p {
+    max-width: 800px;
+    margin: 0 auto;       
+    text-align: center;
+    font-family: var(--body-font);
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+  
